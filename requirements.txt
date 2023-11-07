@@ -1,0 +1,6 @@
+librosa
+noisereduce
+speechbrain
+torch==1.8.0  # This version is an example, you may need to install the version compatible with SpeechBrain.
+torchaudio==0.8.0  # This version must be compatible with the torch version.
+
