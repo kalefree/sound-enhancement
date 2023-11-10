@@ -2,8 +2,10 @@ import librosa
 import noisereduce as nr
 from speechbrain.pretrained import SpectralMaskEnhancement
 
+
+data_path  = "../../sounds/"
 # Load audio file using Librosa
-audio, rate = librosa.load('your_audio.wav', sr=None)
+audio, rate = librosa.load('meditation-session-annaloes-geerling.wav', sr=None)
 
 # Noise reduction using noisereduce
 reduced_noise_audio = nr.reduce_noise(y=audio, sr=rate)
